@@ -1,0 +1,10 @@
+prophet
+fastapi
+uvicorn
+pandas
+numpy
+requests
+streamlit
+plotly
+openmeteo-requests
+retry-requests
