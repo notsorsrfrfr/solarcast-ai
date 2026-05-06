@@ -16,8 +16,15 @@ st.markdown("""
     .sc-header { font-size: 28px; font-weight: 600; color: #e8f4f0; letter-spacing: -0.5px; margin-bottom: 2px; }
     .sc-sub { font-size: 13px; color: #4a7c6f; margin-bottom: 0; }
     .sc-badge { display: inline-block; background: #0d2e26; color: #00c896; border: 1px solid #00c896;
-        border-radius: 4px; font-size: 11px; font-weight: 600; padding: 2px 8px;
-        letter-spacing: 0.08em; text-transform: uppercase; margin-left: 10px; vertical-align: middle; }
+    border-radius: 4px; font-size: 11px; font-weight: 600; padding: 2px 8px;
+    letter-spacing: 0.08em; text-transform: uppercase; margin-left: 10px; vertical-align: middle;
+    animation: pulse 1.5s ease-in-out infinite; }
+
+@keyframes pulse {
+    0%   { opacity: 1; box-shadow: 0 0 0 0 rgba(0, 200, 150, 0.4); }
+    50%  { opacity: 0.6; box-shadow: 0 0 0 6px rgba(0, 200, 150, 0); }
+    100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0, 200, 150, 0); }
+}
     .kpi-card { background: #0d1425; border: 1px solid #1a2a4a; border-radius: 10px; padding: 18px 20px; }
     .kpi-label { font-size: 11px; font-weight: 600; color: #3a5a8a; text-transform: uppercase;
         letter-spacing: 0.1em; margin-bottom: 6px; }
